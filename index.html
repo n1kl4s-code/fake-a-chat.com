@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake A Chat</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="loading-screen">
+        <div id="loading-screen-logo">
+            <img src="loadingscreenleft.png" loading="eager" id="loading-screen-logo-message">
+        </div>
+    </div>
+    <div id="main-content">
+        <div id="header-frame" class="main-content-frame">
+            <img src="loadingscreenleft.png" id="main-content-header-frame-image" onpointerup="document.body.classList.toggle('lightmode'); if (document.body.classList.contains('lightmode')) {document.documentElement.style.setProperty('--bg-primary', 'rgb(255, 255, 255)')} else {document.documentElement.style.setProperty('--bg-primary', 'rgb(15, 15, 15)')};">
+            <div id="main-content-header-frame-website-name"></div>
+            <div id="main-content-header-frame-fixed-hint-1">Please do not use this tool to impersonate others.</div>
+            <div id="main-content-header-frame-fixed-hint-2">This was made for entertainment purposes only.<br>You can navigate the page by scrolling.</div>
+        </div>
+        <div id="phone-brand-selection-frame" class="main-content-frame">
+            <div class="fixed-frame-hint">operating system</div>
+            <div id="phone-brand-selection-frame-grid-container">
+                <label>
+                    <input type="radio" name="phone-brand" id="" class="choosing-radio-btn do-something-on-checked">
+                    <span class="radio-btn-span">ios</span>
+                </label>
+                <label>
+                    <input type="radio" name="phone-brand" id="" class="choosing-radio-btn do-something-on-checked" checked>
+                    <span class="radio-btn-span">android</span>
+                </label>
+            </div>
+        </div>
+        <div id="platform-selection-frame" class="main-content-frame">
+            <div class="fixed-frame-hint">platform</div>
+            <div id="platform-selection-frame-grid-container">
+                <label>
+                    <input type="radio" name="platform" id="" class="choosing-radio-btn do-something-on-checked">
+                    <img src="instagram_icon.png" class="app-icon-img">
+                    <span class="radio-btn-span">instagram</span>
+                </label>
+                <label>
+                    <input type="radio" name="platform" id="" class="choosing-radio-btn do-something-on-checked">
+                    <img src="whatsapp_icon.png" class="app-icon-img">
+                    <span class="radio-btn-span">whatsapp</span>
+                </label>
+                <label>
+                    <input type="radio" name="platform" id="" class="choosing-radio-btn do-something-on-checked" checked>
+                    <img src="twitter_icon.png" class="app-icon-img">
+                    <span class="radio-btn-span">x</span>
+                </label>
+                <label>
+                    <input type="radio" name="platform" id="" class="choosing-radio-btn do-something-on-checked">
+                    <img src="snapchat_icon.png" class="app-icon-img">
+                    <span class="radio-btn-span">snapchat</span>
+                </label>
+                <label>
+                    <input type="radio" name="platform" id="" class="choosing-radio-btn do-something-on-checked">
+                    <img src="tiktok_icon.png" class="app-icon-img">
+                    <span class="radio-btn-span">tiktok</span>
+                </label>
+                <label>
+                    <input type="radio" name="platform" id="" class="choosing-radio-btn do-something-on-checked">
+                    <img src="discord_icon.png" class="app-icon-img">
+                    <span class="radio-btn-span">discord</span>
+                </label>
+            </div>
+        </div>
+        <div class="platform" id="platform-instagram"></div>
+        <div class="platform" id="platform-whatsapp"></div>
+        <div class="platform" id="platform-twitter"></div>
+        <div class="platform" id="platform-snapchat"></div>
+        <div class="platform" id="platform-tiktok"></div>
+        <div class="platform" id="platform-discord"></div>
+    </div>
+</body>
+</html>
+
+<!-- 
+- phone selection (Iphone, Samsung) ✔️
+- platform selection (Insta, WhatsApp, Twitter, Snapchat, TikTok, Discord)
+- themes and the platform (light, dark)
+- verified badges option (if available on platform)
+- custom avatar image, name and displayname (if available on platform)
+- timestamps in chat or underneath messages (if available on platform)
+- watermark (black and white logo with 20% or 25% visibility) in screenshot
+- specific message styles (e.g.: instagram single message, top message, middle message, bottom message)
+- templates for every dm, that get filled out
+- message adding/removing overlay
+- login system
+- remove watermark only with password
+-->
