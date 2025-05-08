@@ -33,9 +33,6 @@ html, body {
     color: var(--text-primary);
     font-family: system-ui;
     user-select: none;
-}
-
-body {
     transition: background-color 0.3s ease;
 }
 
@@ -86,7 +83,7 @@ body {
     aspect-ratio: 9/16;
     height: 100%;
     margin: 0 auto;
-    background-color: white;
+    /* background-color: white; */
     overflow-y: scroll;
 }
 
